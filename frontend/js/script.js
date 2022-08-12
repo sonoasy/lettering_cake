@@ -1,8 +1,10 @@
+/* 입력받은 텍스트를 보여주기 위한 코드 */
 function setText()  {
   const text = document.getElementById("text").value;
   document.getElementById("result").innerText = text;
 }
 
+/* 폰트 색상 변경을 위한 코드 */
 let color;
 const defaultColor = "#000000";
 
@@ -29,9 +31,13 @@ function updateAll(event) {
   });
 }
 
-function setSize() {
+/* 폰트 사이즈 변경을 위한 코드 */
+const range = document.getElementById("range");
 
-}
+range.addEventListener('input', function () {
+  var size = range.value;
+  document.querySelector("p").style.fontSize = size + "px";
+});
 
 /* 텍스트 박스 드래그앤 드랍을 위한 코드 */
 const container = document.querySelector(".area");
