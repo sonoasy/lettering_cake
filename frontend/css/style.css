@@ -1,0 +1,32 @@
+.box {
+position:relative;
+transition: .5s ease; /* 필수는 아님 */
+}
+
+#text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#result {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box:hover {
+opacity:0.7;
+}
+
+.box:hover #text {
+    visibility:visible;
+}    
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
