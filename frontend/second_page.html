@@ -8,11 +8,13 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-    <input id='name' onkeyup='printName()'/>
+    <input type="text" id="text" onkeyup="setText()"/>
+    <input type="color" id="color"/>
+    <input type="range" id="size" min="10" max="20" onchange="setSize()"/>
     <div class="area">
         <img src="img/lettering_img1.png"/>
         <div class="area_box">
-            <div id='result'></div>
+            <p style="color: black;" id="result"></p>
         </div>
     </div>
     <script src="js/script.js"></script>

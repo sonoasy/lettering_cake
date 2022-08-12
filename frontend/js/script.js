@@ -1,6 +1,36 @@
-function printName()  {
-    const name = document.getElementById('name').value;
-    document.getElementById("result").innerText = name;
+function setText()  {
+  const text = document.getElementById("text").value;
+  document.getElementById("result").innerText = text;
+}
+
+let color;
+const defaultColor = "#000000";
+
+window.addEventListener("load", startup, false);
+
+function startup() {
+  color = document.querySelector("#color");
+  color.value = defaultColor;
+  color.addEventListener("input", updateFirst, false);
+  color.addEventListener("change", updateAll, false);
+  color.select();
+}
+
+function updateFirst(event) {
+  const p = document.querySelector("p");
+  if (p) {
+    p.style.color = event.target.value;
+  }
+}
+
+function updateAll(event) {
+  document.querySelectorAll("p").forEach((p) => {
+    p.style.color = event.target.value;
+  });
+}
+
+function setSize() {
+
 }
 
 /* 텍스트 박스 드래그앤 드랍을 위한 코드 */
