@@ -1,0 +1,40 @@
+/* 폰트 */
+@font-face {
+    font-family: 'BMEULJIRO';
+    src: url('../font/BMEULJIRO.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BMJUA';
+    src: url('../font/BMJUA.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lotte_dream_medium';
+    src: url('../font/Lotte_dream_medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lotte happy medium';
+    src: url('../font/Lotte_happy_medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Maplestory';
+    src: url('../font/Maplestory.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'BMEULJIRO';
+  }
+  

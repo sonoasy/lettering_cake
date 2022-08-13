@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>이미지 편집</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/font.css" rel="stylesheet">
 </head>
 <body>
     <div style="text-align: center;">
@@ -13,33 +14,28 @@
           <strong><em>Lettering Cake</em></strong>
         </p>
     </div>
-    
     <div style="text-align: center;">
-
         <div style="display: inline-block; text-align: center; vertical-align: top;">
             <div style="display: block; margin: 1em;">케이크 문구를 입력해주세요</div>
             <textarea style="display: block; margin: 1em;" rows="3" cols="30" placeholder="..." id="text" onkeyup="setText()"></textarea>
         </div>
-
         <div style="display: inline-block; text-align: center;" class="area">
             <img src="img/lettering_img1.png"/>
             <div class="area_box">
                 <p style="color: black;" id="result"></p>
             </div>
         </div>
-
         <div style="display: inline-block; text-align: right; vertical-align: top;" >
             <div class="dropdown">
                 <button class="dropbtn">
-                    <span class="dropbtn_icon">more_horiz</span>
-                    <span class="dropbtn_content">Select a font...</span>
+                    <span class="dropbtn_content" id="dropbtn_text">Select a font...</span>
                     <span class="dropbtn_click" style="font-family: Material Icons; font-size : 16px; color : #3b3b3b; float:right;"
                     onclick="dropdown()">⇩</span>
                 </button>
                 <div class="dropdown-content">
                     <div class="font" style="font-family: 'BMEULJIRO';" onclick="showMenu(this.innerText)">BMEULJIRO</div>
                     <div class="font" style="font-family: 'BMJUA';" onclick="showMenu(this.innerText)">BMJUA</div>
-                    <div class="font" style="font-family: 'Lotte_happy_medium';" onclick="showMenu(this.innerText)">Lotte_happy_medium</div>
+                    <div class="font" style="font-family: 'Lotte happy medium';" onclick="showMenu(this.innerText)">Lotte happy medium</div>
                     <div class="font" style="font-family: 'Maplestory';" onclick="showMenu(this.innerText)">Maplestory</div>
                 </div>
             </div>
@@ -49,9 +45,7 @@
             <div style="display: block; margin: 1em;">
                 <input type="color" id="color"/>
             </div>
-            
         </div>
-
     </div>
     
 

@@ -1,3 +1,13 @@
+/* textarea 스타일 */
+textarea {
+  padding: 10px;
+  max-width: 100%;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+}
+
 /* 텍스트 드래그 앤 드랍을 위한 스타일 */
 .area {
     position: relative;
@@ -15,79 +25,10 @@
     color: black;
 }
 
-/* 폰트 */
-@font-face {
-    font-family: 'BMEULJIRO';
-    src: url('../font/BMEULJIRO.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'BMJUA';
-    src: url('../font/BMJUA.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Lotte_dream_medium';
-    src: url('../font/Lotte_dream_medium.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Lotte_happy_medium';
-    src: url('../font/Lotte_happy_medium.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Maplestory';
-    src: url('../font/Maplestory.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-body {
-  font-family: 'BMEULJIRO';
-}
-
-.grid_item {
-  width: 250px;
-  display: inline-block; /*이부분에 성질을 inline-block로 바꿔줘서 가로배치를 해줬다.*/
-  vertical-align: top; /*밑에 4px 여백을 없에는것*/
-}
-
-/* textarea 스타일 */
-textarea {
-  padding: 10px;
-  max-width: 100%;
-  line-height: 1.5;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  box-shadow: 1px 1px 1px #999;
-}
-
   /* 드롭다운 메뉴 스타일 */
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-
-.dropdown-label{
-  font-size : 12px;
-  margin : 10px;
-  font-weight : bold;
-  color : rgb(50, 50, 50);
-}
-
 .dropdown{
   position : relative;
   display : inline-block;
-}
-
-.dropbtn_icon{
-  font-family : 'Material Icons';
 }
 .dropbtn{
   display : block;
@@ -122,7 +63,6 @@ textarea {
   border-radius : 2px;
   background-color :rgb(194, 194, 194)
 }
-
 .dropdown-content div{
   display : block;
   text-decoration : none;
@@ -133,7 +73,6 @@ textarea {
 .dropdown-content div:hover{
   background-color: rgb(226, 226, 226);
 }
-
 .dropdown-content.show{
   display : block;
 }
