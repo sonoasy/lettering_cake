@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 편집</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div style="text-align: center;">
+        <p style="font-size:5em;">
+          <strong><em>Lettering Cake</em></strong>
+        </p>
+    </div>
+    
+    <div>
+        <div style="display: block;">
+            <div style="display: block; margin: 1em;">케이크 문구를 입력해주세요</div>
+            <textarea rows="3" cols="30" placeholder="..." id="text" onkeyup="setText()"></textarea>
+        </div>
+        
+        <input type="color" id="color"/>
+        <input type="range" id="range" value="50" min="30" max="80" onchange="setSize()"/>
+        
+        <div class="dropdown-label">FONT</div>
+        <div class="dropdown">
+            <button class="dropbtn">
+                <span class="dropbtn_icon">more_horiz</span>
+                <span class="dropbtn_content">Select a menu...</span>
+                <span class="dropbtn_click" style="font-family: Material Icons; font-size : 16px; color : #3b3b3b; float:right;"
+                onclick="dropdown()">⇩</span>
+            </button>
+            <div class="dropdown-content">
+                <div class="font" style="font-family: 'BMEULJIRO';" onclick="showMenu(this.innerText)">BMEULJIRO</div>
+                <div class="font" style="font-family: 'BMJUA';" onclick="showMenu(this.innerText)">BMJUA</div>
+                <div class="font" style="font-family: 'Lotte_happy_medium';" onclick="showMenu(this.innerText)">Lotte_happy_medium</div>
+                <div class="font" style="font-family: 'Maplestory';" onclick="showMenu(this.innerText)">Maplestory</div>
+            </div>
+        </div>
+
+    </div>
+    
+
+    <div class="area">
+        <img src="img/lettering_img1.png"/>
+        <div class="area_box">
+            <p style="color: black;" id="result"></p>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
