@@ -88,6 +88,16 @@
   .dropdown:hover .dropbtn {background-color: rgb(84, 119, 80);}
 */
 
+/* textarea 스타일 */
+textarea {
+  padding: 10px;
+  max-width: 100%;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+}
+
   /* 드롭다운 메뉴 스타일 */
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 

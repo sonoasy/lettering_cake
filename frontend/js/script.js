@@ -19,14 +19,14 @@ function startup() {
 }
 
 function updateFirst(event) {
-  const p = document.querySelector("p");
+  const p = document.getElementById("result");
   if (p) {
     p.style.color = event.target.value;
   }
 }
 
 function updateAll(event) {
-  document.querySelectorAll("p").forEach((p) => {
+  document.getElementById("result").forEach((p) => {
     p.style.color = event.target.value;
   });
 }
@@ -36,7 +36,7 @@ const range = document.getElementById("range");
 
 range.addEventListener('input', function () {
   var size = range.value;
-  document.querySelector("p").style.fontSize = size + "px";
+  document.getElementById("result").style.fontSize = size + "px";
 });
 
 /* 텍스트 박스 드래그앤 드랍을 위한 코드 */
