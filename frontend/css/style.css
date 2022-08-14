@@ -6,6 +6,8 @@ textarea {
   border-radius: 5px;
   border: 1px solid #ccc;
   box-shadow: 1px 1px 1px #999;
+  font-size: 18px;
+  font-family: 'BMEULJIRO';
 }
 
 /* 텍스트 드래그 앤 드랍을 위한 스타일 */
@@ -67,7 +69,7 @@ textarea {
   display : block;
   text-decoration : none;
   color : rgb(37, 37, 37);
-  font-size: 12px;
+  font-size: 15px;
   padding : 12px 20px;
 }
 .dropdown-content div:hover{
@@ -96,7 +98,7 @@ textarea {
   width: 25px;
   height: 25px;
   border-radius: 50%; 
-  background: #04AA6D;
+  background: #a64ca6;
   cursor: pointer;
 }
 
@@ -104,6 +106,6 @@ textarea {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background: #04AA6D;
+  background: #a64ca6;
   cursor: pointer;
 }
