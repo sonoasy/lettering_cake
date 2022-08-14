@@ -3,7 +3,6 @@ button {
     width: 150px;
     height: 60px;
     color: white;
-    background-color: rgb(12, 56, 128);
     background-color: #bf7fbf;
     box-shadow: 0 4px 16px #d8b2d8; 
     font-size: 20px;
@@ -12,7 +11,7 @@ button {
     border: 1px;
     border-radius: white;
     padding:5px;
-    margin: 30px;
+    margin: 60px;
     transition: 0.3s;
     font-family: 'BMEULJIRO';
   }
@@ -25,4 +24,4 @@ button {
     background-color: #d8b2d8;
     cursor: pointer;
     box-shadow: 0;
-  }
+}

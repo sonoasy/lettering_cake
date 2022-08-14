@@ -3,7 +3,7 @@ body {
   }
 
 .text-rainbow {
-    background: linear-gradient(90deg, rgb(255,179,186), rgb(255,179,186), rgb(255,179,186), rgb(255,223,186), rgb(255,236,184), rgb(186,255,201), rgb(186,225,255), rgb(186,225,255), rgb(186,225,255));
+    background: linear-gradient(#e66465, #9198e5);
     color: transparent;
     -webkit-background-clip: text;
 }
