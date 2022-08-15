@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - webpage</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style2.css') }}" />
+ <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/button.css') }}" />
+ <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/font.css') }}" />
+
+</head>
+<body>
+  <div class="text-rainbow" style="text-align: center;">
+    <p style="font-size:5em;">
+      <strong><em>Lettering Cake</em></strong>
+    </p>
+  </div>
+     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style2.css') }}" />
+    <div class="wrapper">
+        <video src="{{ url_for('static', filename='video.mp4') }}" autoplay loop muted></video>
+    </div>
+
+   <form action = "/page_edit" method = "POST" enctype = "multipart/form-data">
+     
+     <div class="filebox">
+     <label for="ex_file"  >업로드</label>
+     <input type = "file" name = "file" id="ex_file"/>
+    </div>
+ <div style="text-align: center;">
+    <!-- 버튼 onclick하면 page_main.html으로 넘어감 --> 
+    <button type="submit" ><span>시작하기</span></button>
+     </div>
+    </form>
+
+
+</body>
+</html>
+

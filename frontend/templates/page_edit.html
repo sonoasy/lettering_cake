@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>이미지 편집</title>
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/font.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/style.css') }}" />
+ <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/font.css') }}" />
 </head>
 <body>
     <div class="text-rainbow" style="text-align: center;">
@@ -19,7 +19,7 @@
             <textarea style="display: block; margin: 1em;" rows="3" cols="30" placeholder="케이크 문구를 입력해주세요" id="text" onkeyup="setText()"></textarea>
         </div>
         <div style="display: inline-block; text-align: center;" class="area">
-            <img src="img/lettering_img1.png"/>
+            <img src="{{ url_for('static', filename=image_file) }}"/>
             <div class="area_box">
                 <p style="color: black;" id="result"></p>
             </div>
@@ -46,6 +46,6 @@
             </div>
         </div>
     </div>
-    <script src="js/script.js"></script>
+    <script src="{{ url_for('static', filename='/js/script.js') }}"></script>
 </body>
 </html>
