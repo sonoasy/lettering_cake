@@ -1,3 +1,15 @@
+/* textarea 스타일 */
+textarea {
+  padding: 10px;
+  max-width: 100%;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+  font-size: 18px;
+  font-family: 'BMEULJIRO';
+}
+
 /* 텍스트 드래그 앤 드랍을 위한 스타일 */
 .area {
     position: relative;
@@ -15,106 +27,10 @@
     color: black;
 }
 
-/* 폰트 */
-@font-face {
-    font-family: 'BMEULJIRO';
-    src: url('../font/BMEULJIRO.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'BMJUA';
-    src: url('../font/BMJUA.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Lotte_dream_medium';
-    src: url('../font/Lotte_dream_medium.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Lotte_happy_medium';
-    src: url('../font/Lotte_happy_medium.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Maplestory';
-    src: url('../font/Maplestory.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* 드롭다운 메뉴 
-.dropbtn {
-    background-color: #043000;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-  }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content div {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown-content div:hover {background-color: #ddd;}
-  
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  .dropdown:hover .dropbtn {background-color: rgb(84, 119, 80);}
-*/
-
-/* textarea 스타일 */
-textarea {
-  padding: 10px;
-  max-width: 100%;
-  line-height: 1.5;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  box-shadow: 1px 1px 1px #999;
-}
-
   /* 드롭다운 메뉴 스타일 */
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-
-.dropdown-label{
-  font-size : 12px;
-  margin : 10px;
-  font-weight : bold;
-  color : rgb(50, 50, 50);
-}
-
 .dropdown{
   position : relative;
   display : inline-block;
-}
-
-.dropbtn_icon{
-  font-family : 'Material Icons';
 }
 .dropbtn{
   display : block;
@@ -149,18 +65,47 @@ textarea {
   border-radius : 2px;
   background-color :rgb(194, 194, 194)
 }
-
 .dropdown-content div{
   display : block;
   text-decoration : none;
   color : rgb(37, 37, 37);
-  font-size: 12px;
+  font-size: 15px;
   padding : 12px 20px;
 }
 .dropdown-content div:hover{
   background-color: rgb(226, 226, 226);
 }
-
 .dropdown-content.show{
   display : block;
+}
+
+/* 슬라이더 스타일 적용 */
+#range {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;  
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+#range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+  background: #a64ca6;
+  cursor: pointer;
+}
+
+#range::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #a64ca6;
+  cursor: pointer;
 }

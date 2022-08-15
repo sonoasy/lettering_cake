@@ -1,0 +1,46 @@
+body {
+    font-family: 'BMEULJIRO';
+  }
+
+.text-rainbow {
+    background: linear-gradient(#e66465, #9198e5);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+/* 폰트 추가 */
+@font-face {
+    font-family: 'BMEULJIRO';
+    src: url('../font/BMEULJIRO.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BMJUA';
+    src: url('../font/BMJUA.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lotte_dream_medium';
+    src: url('../font/Lotte_dream_medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lotte happy medium';
+    src: url('../font/Lotte_happy_medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Maplestory';
+    src: url('../font/Maplestory.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

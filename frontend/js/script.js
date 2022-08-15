@@ -91,22 +91,26 @@ window.onload=()=>{
   }
 
   showMenu=(value)=>{
-    var dropbtn_icon = document.querySelector('.dropbtn_icon');
+    var dropbtn_text = document.getElementById('dropbtn_text');
     var dropbtn_content = document.querySelector('.dropbtn_content');
     var dropbtn_click = document.querySelector('.dropbtn_click');
     var dropbtn = document.querySelector('.dropbtn');
 
-    dropbtn_icon.innerText = '';
+    dropbtn_text.innerText = '';
     dropbtn_content.innerText = value;
+    dropbtn_content.style.fontFamily = value;
     dropbtn_content.style.color = '#252525';
     dropbtn.style.borderColor = '#3992a8';
+
+    var result = document.getElementById("result");
+    result.style.fontFamily = value;
   }
 }
 window.onclick= (e)=>{
   if(!e.target.matches('.dropbtn_click')){
     var dropdowns = document.getElementsByClassName("dropdown-content");
 
-    var dropbtn_icon = document.querySelector('.dropbtn_icon');
+    var dropbtn_text = document.getElementById('dropbtn_text');
     var dropbtn_content = document.querySelector('.dropbtn_content');
     var dropbtn_click = document.querySelector('.dropbtn_click');
     var dropbtn = document.querySelector('.dropbtn');
