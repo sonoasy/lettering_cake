@@ -11,7 +11,7 @@
 
 - 웹페이지: Html/Css, Flask 
 
-<img src="https://user-images.githubusercontent.com/61787171/232217713-c4dd09c0-63b0-45c0-a2a2-45690b191a46.png" width="800"  height="300"/> 
+<img src="https://user-images.githubusercontent.com/61787171/232218129-d430cc5c-6156-465e-9f5f-d9632c9a908e.png" width="800"  height="300"/> 
 
 
 ### 서비스 화면
